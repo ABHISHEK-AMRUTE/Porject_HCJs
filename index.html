@@ -7,58 +7,94 @@
     <style>
         
         body{ 
-            background-image: url('download.png');
+            background-image: url('download.jpeg');
             margin: 0px;
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
+            
             font-family: Arial, Helvetica, sans-serif;
          }
         #fixed
-        {
-            position: sticky;
-            width:100%;
+        {  
+            width: 100%;
+            position: fixed;
+            top: 0px;
         }
         #logo
         {
-            background-color: white;
+            background-color:rgba(255, 255, 255, 0.739);
             text-align: center;
             font-size: 35px;
-            padding: 20px 0px 0px 0px;
-            
-           
-
+            padding: 5px 0px 0px 0px;
+         
         }
         #navigation
         {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.87);
             padding: 5px;
             text-align: center;
         }
         .nav_ele
         {
-         color:rosybrown;
-        margin: 0px 15px 0px 15px;
+         color:rgb(197, 115, 115);
+         margin: 0px 15px 0px 15px;
          font-size: 17px ;
          text-decoration: none;
          
+        }
+        #main_body
+        {
+           
+            margin: 450px 0px 0px 0px;
+        }
+        #grid
+        {   display: grid;
+            text-align: center;
+            grid-template-columns: 60% 40%;
+        }
+        #image_tab
+        {
+          padding:30px;
+          color: white;
+          background-color: rgba(0, 0, 255, 0.74);
+        }
+        .grid_item
+        {   padding: 100px;
+            
+            background-color: rgba(255, 255, 255, 0.739);
         }
     </style>
 </head>
 
 <body>
     <div id="fixed">
-    <div id="logo"><span id="lo" onmouseover="document.getElementById('lo').style.color= 'brown';document.getElementById('lo').style.fontSize= '37px' " onmouseout="document.getElementById('lo').style.color= 'black';document.getElementById('lo').style.fontSize= '35px' ;"style="color:black;font-family: 'Times New Roman', Times, serif;;">Abhishek Amrute</span></div>
+    <div id="logo"><span id="lo" onmouseover="document.getElementById('lo').style.color= 'brown'; " onmouseout="document.getElementById('lo').style.color= 'black'; ;"style="color:black;font-family: 'Times New Roman', Times, serif;;">Abhishek Amrute</span></div>
     <div id="navigation">
         <hr>
-          <a id="a" onmouseover="document.getElementById('a').style.color= 'black';document.getElementById('a').style.fontSize= '20px' " onmouseout="document.getElementById('a').style.color= 'rosybrown';document.getElementById('a').style.fontSize= '17px' ;" class="nav_ele" href=""><b>A</b>bout</a>
-          <a id="b" onmouseover="document.getElementById('b').style.color= 'black';document.getElementById('b').style.fontSize= '20px' " onmouseout="document.getElementById('b').style.color= 'rosybrown';document.getElementById('b').style.fontSize= '17px' ;" class="nav_ele" href=""><b>E</b>ducation</a>
-          <a id="c" onmouseover="document.getElementById('c').style.color= 'black';document.getElementById('c').style.fontSize= '20px' " onmouseout="document.getElementById('c').style.color= 'rosybrown';document.getElementById('c').style.fontSize= '17px' ;" class="nav_ele" href=""><b>S</b>kills</a>
-          <a id="d" onmouseover="document.getElementById('d').style.color= 'black';document.getElementById('d').style.fontSize= '20px' " onmouseout="document.getElementById('d').style.color= 'rosybrown';document.getElementById('d').style.fontSize= '17px' ;" class="nav_ele" href=""><b>P</b>rojects</a>
-          <a id="e" onmouseover="document.getElementById('e').style.color= 'black';document.getElementById('e').style.fontSize= '20px' " onmouseout="document.getElementById('e').style.color= 'rosybrown';document.getElementById('e').style.fontSize= '17px' ;" class="nav_ele" href=""><b>C</b>ontect</a>
+          <a id="a" onmouseover="document.getElementById('a').style.color= 'black';document.getElementById('a').style.fontSize= '20px' " onmouseout="document.getElementById('a').style.color= 'rgb(197, 115, 115)';document.getElementById('a').style.fontSize= '17px' ;" class="nav_ele" href="#grid"><b>A</b>bout</a>
+          <a id="b" onmouseover="document.getElementById('b').style.color= 'black';document.getElementById('b').style.fontSize= '20px' " onmouseout="document.getElementById('b').style.color= 'rgb(197, 115, 115)';document.getElementById('b').style.fontSize= '17px' ;" class="nav_ele" href=""><b>E</b>ducation</a>
+          <a id="c" onmouseover="document.getElementById('c').style.color= 'black';document.getElementById('c').style.fontSize= '20px' " onmouseout="document.getElementById('c').style.color= 'rgb(197, 115, 115)';document.getElementById('c').style.fontSize= '17px' ;" class="nav_ele" href=""><b>S</b>kills</a>
+          <a id="d" onmouseover="document.getElementById('d').style.color= 'black';document.getElementById('d').style.fontSize= '20px' " onmouseout="document.getElementById('d').style.color= 'rgb(197, 115, 115)';document.getElementById('d').style.fontSize= '17px' ;" class="nav_ele" href=""><b>P</b>rojects</a>
+          <a id="e" onmouseover="document.getElementById('e').style.color= 'black';document.getElementById('e').style.fontSize= '20px' " onmouseout="document.getElementById('e').style.color= 'rgb(197, 115, 115)';document.getElementById('e').style.fontSize= '17px' ;" class="nav_ele" href=""><b>C</b>ontact</a>
     </div>
     </div>
     
+    <div id="main_body">
+           
+      <div id = "grid">
+               <div class = "grid_item">
+              
+                   <strong style="font-size: 30px;">About me</strong><br>
+                   <p style="text-align: left;font-size: 17px;">​As a natural born go-getter, my passion has continuously driven me to expand my knowledge, experience, and relationships. With a strong background and diverse skill set, I’m confident in the creative ideas and successful solutions I bring to the table. Keep exploring my site to learn more information about me, and reach out directly with any questions.</p>
+               </div>
+               <div id="image_tab">
+                   <img src="p.jpeg" style="border-radius: 50%;background-size:cover;" height="350px" width="300px"><br>
+                   <span style="font-size: 35px;">Abhishek Amrute</span><br>
+                   Indian Institute of Information Technology Kalyani
+               </div>
+      </div>
+    </div>
 </body>
 
 </html>
