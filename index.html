@@ -2,98 +2,330 @@
 <html>
 
 <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project_hcjs</title>
     <style>
-        
-        body{ 
+        body {
             background-image: url('download.jpeg');
             margin: 0px;
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
-            
+
             font-family: Arial, Helvetica, sans-serif;
-         }
-        #fixed
-        {  
+        }
+
+        #fixed {
             width: 100%;
             position: fixed;
             top: 0px;
         }
-        #logo
-        {
-            background-color:rgba(255, 255, 255, 0.739);
+
+        #logo {
+            background-color: rgba(255, 255, 255, 0.739);
             text-align: center;
             font-size: 35px;
             padding: 5px 0px 0px 0px;
-         
+
         }
-        #navigation
-        {
+
+        #navigation {
             background-color: rgba(255, 255, 255, 0.87);
             padding: 5px;
             text-align: center;
         }
-        .nav_ele
-        {
-         color:rgb(197, 115, 115);
-         margin: 0px 15px 0px 15px;
-         font-size: 17px ;
-         text-decoration: none;
-         
+
+        .nav_ele {
+            color: rgb(197, 115, 115);
+            margin: 0px 15px 0px 15px;
+            font-size: 17px;
+            text-decoration: none;
+
         }
-        #main_body
-        {
-           
+
+        .nav_ele1 {
+            color: rgb(211, 69, 69);
+            margin: 0px 15px 0px 15px;
+            font-size: 25px;
+            text-decoration: none;
+
+        }
+
+        #main_body {
+
             margin: 450px 0px 0px 0px;
         }
-        #grid
-        {   display: grid;
+
+        #grid {
+            display: grid;
             text-align: center;
             grid-template-columns: 60% 40%;
         }
-        #image_tab
-        {
-          padding:30px;
-          color: white;
-          background-color: rgba(0, 0, 255, 0.74);
+
+        #image_tab {
+            padding: 30px;
+            color: white;
+            background-color: rgba(0, 0, 255, 0.74);
         }
-        .grid_item
-        {   padding: 100px;
-            
-            background-color: rgba(255, 255, 255, 0.739);
+
+        .grid_item {
+            padding: 200px;
+
+            background-color: whitesmoke
+        }
+
+        #grid1 {
+
+            display: grid;
+            text-align: center;
+            background-color: rgba(0, 0, 255, 0.74);
+            grid-template-columns: 40% 60%;
+        }
+
+        #edu_lo {
+            overflow: scroll;
+            background-color: rgba(0, 0, 255, 0.74);
+        }
+
+        #edu_info {
+            padding: 90px;
+
+            background-color: whitesmoke
+        }
+
+        #skills {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            background-color: whitesmoke;
+            text-align: center;
+            padding: 100px;
+        }
+
+        #skill_icon {
+            width: 150px;
+            height: 150px;
+        }
+
+        #projects {
+            background-color: white;
+            padding: 5px;
+            padding: 15px;
+            text-align: center;
+            display: grid;
+            overflow: scroll;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        #projects_image {
+
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        #space_only
+        {  padding: 10px;
+           text-align: center;
+          
+        }
+        #contact
+        {
+            background-color: #121212;
+            color: rgba(255, 255, 255, 0.835);
+            padding: 30 px;
         }
     </style>
 </head>
 
 <body>
     <div id="fixed">
-    <div id="logo"><span id="lo" onmouseover="document.getElementById('lo').style.color= 'brown'; " onmouseout="document.getElementById('lo').style.color= 'black'; ;"style="color:black;font-family: 'Times New Roman', Times, serif;;">Abhishek Amrute</span></div>
-    <div id="navigation">
-        <hr>
-          <a id="a" onmouseover="document.getElementById('a').style.color= 'black';document.getElementById('a').style.fontSize= '20px' " onmouseout="document.getElementById('a').style.color= 'rgb(197, 115, 115)';document.getElementById('a').style.fontSize= '17px' ;" class="nav_ele" href="#grid"><b>A</b>bout</a>
-          <a id="b" onmouseover="document.getElementById('b').style.color= 'black';document.getElementById('b').style.fontSize= '20px' " onmouseout="document.getElementById('b').style.color= 'rgb(197, 115, 115)';document.getElementById('b').style.fontSize= '17px' ;" class="nav_ele" href=""><b>E</b>ducation</a>
-          <a id="c" onmouseover="document.getElementById('c').style.color= 'black';document.getElementById('c').style.fontSize= '20px' " onmouseout="document.getElementById('c').style.color= 'rgb(197, 115, 115)';document.getElementById('c').style.fontSize= '17px' ;" class="nav_ele" href=""><b>S</b>kills</a>
-          <a id="d" onmouseover="document.getElementById('d').style.color= 'black';document.getElementById('d').style.fontSize= '20px' " onmouseout="document.getElementById('d').style.color= 'rgb(197, 115, 115)';document.getElementById('d').style.fontSize= '17px' ;" class="nav_ele" href=""><b>P</b>rojects</a>
-          <a id="e" onmouseover="document.getElementById('e').style.color= 'black';document.getElementById('e').style.fontSize= '20px' " onmouseout="document.getElementById('e').style.color= 'rgb(197, 115, 115)';document.getElementById('e').style.fontSize= '17px' ;" class="nav_ele" href=""><b>C</b>ontact</a>
+        <div id="logo"><span id="lo" onmouseover="document.getElementById('lo').style.color= 'brown'; "
+                onmouseout="document.getElementById('lo').style.color= 'black'; ;"
+                style="color:black;font-family: 'Times New Roman', Times, serif;;">Abhishek Amrute</span></div>
+        <div id="navigation">
+            <hr>
+            <a id="a"
+                onmouseover="document.getElementById('a').style.color= 'black';document.getElementById('a').style.fontSize= '20px' "
+                onmouseout="document.getElementById('a').style.color= 'rgb(197, 115, 115)';document.getElementById('a').style.fontSize= '17px' ;"
+                class="nav_ele" href="#grid"><b>A</b>bout</a>
+            <a id="b"
+                onmouseover="document.getElementById('b').style.color= 'black';document.getElementById('b').style.fontSize= '20px' "
+                onmouseout="document.getElementById('b').style.color= 'rgb(197, 115, 115)';document.getElementById('b').style.fontSize= '17px' ;"
+                class="nav_ele" href="#grid1"><b>E</b>ducation</a>
+            <a id="c"
+                onmouseover="document.getElementById('c').style.color= 'black';document.getElementById('c').style.fontSize= '20px' "
+                onmouseout="document.getElementById('c').style.color= 'rgb(197, 115, 115)';document.getElementById('c').style.fontSize= '17px' ;"
+                class="nav_ele" href="#skills"><b>S</b>kills</a>
+            <a id="d"
+                onmouseover="document.getElementById('d').style.color= 'black';document.getElementById('d').style.fontSize= '20px' "
+                onmouseout="document.getElementById('d').style.color= 'rgb(197, 115, 115)';document.getElementById('d').style.fontSize= '17px' ;"
+                class="nav_ele" href="#projects"><b>P</b>rojects</a>
+            <a id="e"
+                onmouseover="document.getElementById('e').style.color= 'black';document.getElementById('e').style.fontSize= '20px' "
+                onmouseout="document.getElementById('e').style.color= 'rgb(197, 115, 115)';document.getElementById('e').style.fontSize= '17px' ;"
+                class="nav_ele" href="#contact"><b>C</b>ontact</a>
+        </div>
     </div>
-    </div>
-    
+
     <div id="main_body">
-           
-      <div id = "grid">
-               <div class = "grid_item">
-              
-                   <strong style="font-size: 30px;">About me</strong><br>
-                   <p style="text-align: left;font-size: 17px;">​As a natural born go-getter, my passion has continuously driven me to expand my knowledge, experience, and relationships. With a strong background and diverse skill set, I’m confident in the creative ideas and successful solutions I bring to the table. Keep exploring my site to learn more information about me, and reach out directly with any questions.</p>
-               </div>
-               <div id="image_tab">
-                   <img src="p.jpeg" style="border-radius: 50%;background-size:cover;" height="350px" width="300px"><br>
-                   <span style="font-size: 35px;">Abhishek Amrute</span><br>
-                   Indian Institute of Information Technology Kalyani
-               </div>
-      </div> 
+
+        <div id="grid">
+            <div class="grid_item">
+
+                <strong style="font-size: 30px;">About me</strong><br>
+                <p style="text-align: left;font-size: 17px;">​As a natural born go-getter, my passion has continuously
+                    driven me to expand my knowledge, experience, and relationships. With a strong background and
+                    diverse skill set, I’m confident in the creative ideas and successful solutions I bring to the
+                    table. Keep exploring my site to learn more information about me, and reach out directly with any
+                    questions.</p>
+            </div>
+            <div id="image_tab">
+                <img src="p.jpeg" style="border-radius: 50%;background-size:cover;" height="350px" width="300px"><br>
+                <span style="font-size: 35px;">Abhishek Amrute</span><br>
+                Indian Institute of Information Technology Kalyani
+            </div>
+        </div>
+        <div style="background-color: whitesmoke;"><br></div>
+        <div id="grid1">
+            <div class="edu_lo">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_JYe5t7/data2.json" mode="bounce"
+                    speed="3" style="width: 500px; height: 450px;" loop autoplay>
+                </lottie-player><br>
+                <span style="font-size: 35px; color: white;">Qualificaitons</span><br>
+            </div>
+            <div id="edu_info">
+                <span style="font-size: 35px;">Educational details</span><br>
+                <ul style="font-size: 20px;">
+                    <li>Institute : Indian Institute of Information Technology Kalyani</li>
+                    <li>Degree : B.Tech. in Computer Sceience and Engineering</li>
+                    <li>Current year : 2nd year, 4th semester.</li>
+                </ul>
+                <strong style="font-size: 25px;">Class 12</strong>
+                <ul style="font-size: 20px;">
+                    <li>Little Flower Senior Secondary School Betul</li>
+                    <li>CBSE Board</li>
+                    <li>Secured 89%</li>
+                </ul>
+                <strong style="font-size: 25px;">Class 10</strong>
+                <ul style="font-size: 20px;">
+                    <li>Little Flower Senior Secondary School Betul</li>
+                    <li>CBSE Board</li>
+                    <li>Secured 9.4 CGPA</li>
+                </ul>
+            </div>
+        </div>
+        <div style="background-color: whitesmoke;"><br><br>><br><br><br></div>
+        <div style="font-size: 35px;text-align: center;background-color: whitesmoke;"><B>My Skills</B><br></div>
+        <div id="skills">
+            <div>
+                <img id="skill_icon" src="android.png"><br><br>
+                <span style="font-size: 25px;"> Android Developer</span><br>
+
+            </div>
+            <div>
+                <img id="skill_icon" src="web-development.png"><br><br>
+                <span style="font-size: 25px;">Frontend Developer</span><br>
+
+            </div>
+        </div>
+        <div style="font-size: 30px;text-align: center;background-color: whitesmoke;">Language known</div>
+        <div style="color: blue;text-align: center;background-color: whitesmoke;">
+            <br>
+            <span class="nav_ele1">Java</span>
+            <span class="nav_ele1">JavaScript</span>
+            <span class="nav_ele1">C++</span>
+            <span class="nav_ele1">C</span>
+            <span class="nav_ele1">HTML</span>
+            <span class="nav_ele1">CSS</span>
+            <span class="nav_ele1">Python</span>
+            <br><br><br>  
+        </div>
+        <div style="font-size: 27px;background-color: white;text-align: center;padding: 15px;">Projects<br></div>
+        <div id="projects">
+            <div id="space_only">
+            <div class="container">
+                <img id="projects_image" src="vrfrineds.jpeg"><br><br>
+                <span>VrFriends-chat application</span>
+                <div class="overlay">
+                    <div class="text">Vrfrineds<br><span style="font-size: 15px;">A one-to-one chat application</span><br><br><br><a target="_black" href="https://github.com/ABHISHEK-AMRUTE/VrFriends"><img src="github.png" height="50px" weight="50px" title="Visit git repo"></a>&nbsp&nbsp&nbsp<a target="_black" href="https://play.google.com/store/apps/details?id=com.socialmedia.friends"><img src="playstore.png" height="50px" weight="50px" title="See on play store"></a></div>
+                </div>
+            </div>  </div>
+            <div id="space_only">
+            <div class="container">
+                    <img id="projects_image" src="motivealarm.jpeg"><br><br>
+                    <span>Motive Alarm</span>
+                    <div class="overlay">
+                            <div class="text">Motive Alarm<br><span style="font-size: 15px;">A new way of waking</span><br><br><br><a target="_black" href="https://github.com/ABHISHEK-AMRUTE/Motive_Alarm"><img src="github.png" height="50px" weight="50px" title="Visit git repo"></a>&nbsp&nbsp&nbsp<a target="_black" href="https://play.google.com/store/apps/details?id=com.ma.modernmotivealarm"><img src="playstore.png" height="50px" weight="50px" title="See on play store"></a></div>
+                        </div>
+            </div>  </div>
+            <div id="space_only">
+                    <div class="container">
+                            <img id="projects_image" src="mrocrd.jpeg"><br><br>
+                            <span>Payment record app</span>
+                            <div class="overlay">
+                                    <div class="text">Credit book App<br><span style="font-size: 15px;">Your digital khata book</span><br><br><br><a target="_black" href="https://play.google.com/store/apps/details?id=com.applicationpay.pay_it_man"><img src="playstore.png" height="50px" weight="50px" title="See on play store"></a></div>
+                                </div>
+                    </div></div>
+            <div id="space_only">
+                    <div class="container">
+                            <img id="projects_image" src="tic.jpeg"><br><br>
+                            <span>TIC-TAC-TOE</span>
+                            <div class="overlay">
+                                    <div class="text">Tic-Tac-Toe<br><span style="font-size: 15px;">Revisit childhood memory</span><br><br><br><a target="_black" href="https://github.com/ABHISHEK-AMRUTE/Tic_Tac_Toe"><img src="github.png" height="50px" weight="50px" title="Visit git repo"></a>&nbsp&nbsp&nbsp<a target="_black" href="https://play.google.com/store/apps/details?id=com.tictactoe.myapplication"><img src="playstore.png" height="50px" weight="50px" title="See on play store"></a></div>
+                                </div>
+                    </div></div>
+            
+          
+        </div>
+    </div>
+    <div id="contact">
+      <span style="font-size: 25px;margin:10px 0px 10px 20px">Contacts</span>
+      <ul style="font-size: 20px;">
+            <li>Email ID: abhishekamrutelfs@gmial.com</li>
+        <li>Contact number :+91 6265070160</li>
+          <li><a href="https://www.linkedin.com/in/abhishek-amrute-33808a172/" target ="_black" style="color: white;">Linkedin Profile</a></li>
+          <li><a href="https://github.com/ABHISHEK-AMRUTE" target ="_black" style="color: white;">Github Page</a></li>
+          <li><a href="https://play.google.com/store/apps/developer?id=ABHISHEK+AMRUTE&hl=en_IN" target ="_black" style="color: white;">Play store's developer account</a></li>
+          
+      </ul>
+      <br><br>
     </div>
 </body>
 
